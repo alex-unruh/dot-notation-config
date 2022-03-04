@@ -12,13 +12,13 @@ composer require alex-unruh/dot-notation-config
 
 ### Usage with files:
 
-```
+```php
 // config/app.php
 
 return [
   'app_name' => 'My App',
 
-  'app_version => '1.0.0'
+  'app_version' => '1.0.0',
 
   'connection_params' => [
     'host' => 'localhost',
@@ -43,19 +43,25 @@ print_r(Config::get('app')); // Returns all the array data placed in the app fil
 
 ### Usage with virtual data:
 
-```
-Config::setData('my_data', [
+```php
+
+// index.php
+
+$data = [
   'app_name' => 'My App',
-  'app_version' => '1.0.0', 
-  'connection_params' => 
-  [
+
+  'app_version' => '1.0.0',
+
+  'connection_params' => [
     'host' => 'localhost',
     'dbname' => 'my_database',
     'user' => 'root',
     'password' => '',
     'port' => '3306'
-  }
-]);
+  ]
+];
+
+Config::setData('my_data', $data);
 
 echo Config::get('my_data.app_name'); // 'My App'
 echo Config::get('my_data.connection_params.host'); // 'localhost'
@@ -77,10 +83,12 @@ As the library only has static methods, you can set the configuration files dire
 
 Define the config dir in a file like a entry point and don't worry about him anymore...
 
-```
+```php
 // public/index.php
+
 $config_path = $_SERVER['DOCUMENT_ROOT'] . $_ENV['BASE_PATH'] . '/config';
 Config::setDir('/config_path);
 
-// controllers/services/api_service.php
+// controllers/services/MyService.php
+
 echo Config::get('app.app_name'); // 'My App'
