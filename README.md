@@ -102,6 +102,7 @@ Config::append($my_array_item, $value_to_append);
 // $my_array_item = 'app'
 // $value_to_remove = 'app_licence'
 Config::remove($my_array_item, $value_to_remove);
+```
 
 The first two is described in this documentation, the other is described in the [Dflydev Dot Access data](https://github.com/dflydev/dflydev-dot-access-data) docs.
 
