@@ -13,9 +13,9 @@ class Config
   private static $config = null;
 
   /**
-   * Undocumented function
+   * Defines the directory where the configuration files will be published 
    *
-   * @param string $dir
+   * @param string $dir The directory path without final slash eg: (/config) or (/myqpp/config to use with localhost, for example)
    * @return void
    */
   public static function setDir(string $dir)
@@ -24,10 +24,10 @@ class Config
   }
 
   /**
-   * Undocumented function
+   * Defines a virtual array data set to be called for an alias
    *
-   * @param string $data_alias
-   * @param array $data
+   * @param string $data_alias The alias to data set
+   * @param array $data 
    * @return void
    */
   public static function setData(string $data_alias, array $data)
@@ -37,9 +37,10 @@ class Config
   }
 
   /**
-   * Undocumented function
+   * A layer built on get method from https://packagist.org/packages/dflydev/dot-access-data
+	 * The difference is that the first aurgument in dot notation is a file whre the data set is located.
    *
-   * @param string $requested_config
+   * @param string $requested_config eg: (app.app_name)
    * @return string|array
    */
   public static function get(string $requested_config, $default = null)
@@ -49,10 +50,11 @@ class Config
   }
 
   /**
-   * Undocumented function
+ 	* A layer built on set method from https://packagist.org/packages/dflydev/dot-access-data
+	 * The difference is that the first aurgument in dot notation is a file whre the data set is located.
    *
-   * @param string $requested_config
-   * @param string|array $value
+   * @param string $requested_config eg:(app.app_name)
+   * @param string|array $value eg: 'My App"
    * @return void
    */
   public static function set(string $requested_config, $value)
@@ -62,10 +64,11 @@ class Config
   }
 
   /**
-   * Undocumented function
+   * A layer built on append method from https://packagist.org/packages/dflydev/dot-access-data
+	 * The difference is that the first aurgument in dot notation is a file whre the data set is located.
    *
-   * @param string $requested_config
-   * @param string|array $value
+    * @param string $requested_config eg:(app.app_name)
+   * @param string|array $value eg: 'My App"
    * @return void
    */
   public static function append(string $requested_config, $value)
@@ -75,10 +78,10 @@ class Config
   }
 
   /**
-   * Undocumented function
+   * Remove an item from config array data in execution time
    *
-   * @param string $requested_config
-   * @param string|array $value
+   * @param string $requested_config eg:(app.app_name)
+   * @param string|array $value eg: 'My App"
    * @return void
    */
   public static function remove(string $requested_config)
@@ -90,9 +93,9 @@ class Config
   }
 
   /**
-   * Undocumented function
+   * Check if the requested data are present in the current array data set
    *
-   * @param string $requested_config
+   * @param string $requested_config eg:(app.app_name)
    * @return boolean
    */
   public static function has(string $requested_config): bool
@@ -102,7 +105,7 @@ class Config
   }
 
   /**
-   * Undocumented function
+   * Detach the file from the requested array
    *
    * @param string $config
    * @throws \InvalidArgumentException
