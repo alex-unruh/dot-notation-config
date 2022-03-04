@@ -75,6 +75,34 @@ The methods is the same presents in [Dflydev Dot Access data](https://github.com
 
 Methods: setDir, setData, get, set, has, remove and append.
 
+```php
+
+// $my_config_dir = '/my-config-dir'
+Config::setDir($my_config_dir);
+
+// $my_array = ['app_name' => 'My App', 'app_version' => '1.0.0']
+Config::setData($my_array);
+
+// $my_array_search = 'app.app_name'
+// $default_if_key_not_exists = 'My App'
+Config::get($my_array_search, $default_if_key_not_exists); // 'My App'
+
+// $my_array_item = 'app.name'
+// $my_new_value = 'My New App Name'
+Config::set($my_array_item, $my_new_value);
+
+// $my_array_data = 'app'
+// $the_key_im_looking_for = 'app_version'
+Config::has($my_array_data, $the_key_im_looking_for); // true
+
+// $my_array_item = 'app'
+// $value_to_append = ['app_licence' => 'MIT']
+Config::append($my_array_item, $value_to_append);
+
+// $my_array_item = 'app'
+// $value_to_remove = 'app_licence'
+Config::remove($my_array_item, $value_to_remove);
+
 The first two is described in this documentation, the other is described in the [Dflydev Dot Access data](https://github.com/dflydev/dflydev-dot-access-data) docs.
 
 ### Tricks:
