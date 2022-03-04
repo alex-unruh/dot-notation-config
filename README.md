@@ -29,7 +29,7 @@ composer require alex-unruh/dot-notation-config
 
 return [
 	'app_name' => 'My App',
-	
+
 	'app_version => '1.0.0'
 
 	'connection_params' => [
@@ -38,7 +38,7 @@ return [
 		'user' => 'root',
 		'password' => '',
 		'port' => '3306'
- 	]
+	]
 ];
 
 
@@ -58,16 +58,16 @@ print_r(Config::get('app')); // Returns all the array data placed in the app fil
 
 ```
 Config::setData('my_data', [
-		'app_name' => 'My App',
-		'app_version' => '1.0.0', 
-		'connection_params' => 
-		[
-			'host' => 'localhost',
-			'dbname' => 'my_database',
-			'user' => 'root',
-			'password' => '',
-			'port' => '3306'
-		}
+	'app_name' => 'My App',
+	'app_version' => '1.0.0', 
+	'connection_params' => 
+	[
+		'host' => 'localhost',
+		'dbname' => 'my_database',
+		'user' => 'root',
+		'password' => '',
+		'port' => '3306'
+	}
 ]);
 
 echo Config::get('my_data.app_name'); // 'My App'
@@ -78,7 +78,7 @@ print_r(Config::get('my_data')); // Returns all the array data placed in the my_
 
 ### Methods:
 
-The methods is the same presents in [Dflydev Dot Access data](https://github.com/dflydev/dflydev-dot-access-data). The difference is that the first argument in dot-notations is a file or a virtual config set alias defined on setDir or setdata methods described above.
+The methods is the same presents in [Dflydev Dot Access data](https://github.com/dflydev/dflydev-dot-access-data). The difference is that the first argument in dot-notations is a file or a virtual config set alias defined on setDir or setData methods described above.
 
 Methods: setDir, setData, get, set, has, remove and append.
 
