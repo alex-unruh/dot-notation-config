@@ -4,18 +4,6 @@ This library is based on the Laravel config concept. It values performance and w
 
 The difference is that we can access the data from a file instead an simple array. 
 
-### Dependencies:
-
-```
-dflydev/dot-access-data
-```
-
-### Requirements:
-
-```
-php ^7.2+
-```
-
 ### How to install:
 
 ```
