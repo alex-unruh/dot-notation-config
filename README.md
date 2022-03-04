@@ -2,7 +2,7 @@
 
 This library is based on the Laravel config concept. It values performance and was built on top of the library [Dflydev Dot Access data](https://github.com/dflydev/dflydev-dot-access-data).
 
-The difference is that we can access the data from a file instead an simple array. 
+The difference is that we can also access the data from a file instead of just an array in runtime execution.
 
 ### How to install:
 
