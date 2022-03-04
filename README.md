@@ -119,8 +119,6 @@ Config::append($my_array_item, $value_to_append);
 Config::remove($my_array_item, $value_to_remove);
 ```
 
-The first two is described in this documentation, the other is described in the [Dflydev Dot Access data](https://github.com/dflydev/dflydev-dot-access-data) docs.
-
 ### Tricks:
 
 As the library only has static methods, you can set the configuration files directory at any time or in any file called before manipulating the data through the class's methods.
