@@ -1,20 +1,20 @@
 {
-    "name": "alex-unruh/dot-notation-config",
-    "description": "An abstraction layer to get data from array or a file built on Dflydev\\DotAccessData\\Data",
-    "type": "library",
-    "require": {
-        "dflydev/dot-access-data": "^3.0"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Alexandre Unruh",
-            "email": "33932795+alex-unruh@users.noreply.github.com"
-        }
-    ],
-		"autoload": {
-			"psr-4": {
-				"AlexUnruh\\Config\\" : "src/"
-			}
+	"name": "alex-unruh/dot-notation-config",
+	"description": "An abstraction layer to get data from array or a file built on Dflydev\\DotAccessData\\Data",
+	"homepage": "https://github.com/alex-unruh/dot-notation-config",
+	"type": "library",
+	"keywords": ["dot", "access",	"data",	"notation",	"config"],
+	"license": "MIT",
+	"authors": [
+		{"name": "Alexandre Unruh",	"email": "alexandre@unruh.com.br"}
+	],
+	"require": {
+		"dflydev/dot-access-data": "^3.0",
+		"php": "^7.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"AlexUnruh\\Config\\": "src/"
 		}
+	}
 }
