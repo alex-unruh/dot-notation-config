@@ -41,7 +41,6 @@ return [
   ]
 ];
 
-
 // index.php
 
 use AlexUnruh\Config;
