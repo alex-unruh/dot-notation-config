@@ -47,6 +47,8 @@ print_r(Config::get('app')); // Returns all the array data placed in the app fil
 
 // index.php
 
+use AlexUnruh\Config;
+
 $data = [
   'app_name' => 'My App',
 
