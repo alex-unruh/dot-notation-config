@@ -12,6 +12,8 @@ composer require alex-unruh/dot-notation-config
 
 ### Usage with files:
 
+You can have as many configuration files as you want
+
 ```php
 // config/app.php
 
@@ -29,14 +31,25 @@ return [
   ]
 ];
 
+// config/messages.php
+
+return [
+  'internal_error' => 'Internal server error',
+  400 => 'Bad request'
+];
+
 // index.php
 
 use AlexUnruh\Config;
 
 Config::setDir('/config');
 
+// Search data in /config/app.php file
 echo Config::get('app.app_name'); // 'My App'
 echo Config::get('app.connection_params.host'); // 'localhost'
+
+// Search data in /config/messages.php file
+echo Config::get('messages.400'); // 'Bad request'
 
 print_r(Config::get('app')); // Returns all the array data placed in the app file.
 ```
