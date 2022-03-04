@@ -1,5 +1,5 @@
 {
-    "name": "alex-unruh/config",
+    "name": "alex-unruh/dot-notation-config",
     "description": "An abstraction layer to get data from array or a file built on Dflydev\\DotAccessData\\Data",
     "type": "library",
     "require": {
