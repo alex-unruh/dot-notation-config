@@ -28,17 +28,17 @@ composer require alex-unruh/dot-notation-config
 // config/app.php
 
 return [
-	'app_name' => 'My App',
+  'app_name' => 'My App',
 
-	'app_version => '1.0.0'
+  'app_version => '1.0.0'
 
-	'connection_params' => [
-		'host' => 'localhost',
-		'dbname' => 'my_database',
-		'user' => 'root',
-		'password' => '',
-		'port' => '3306'
-	]
+  'connection_params' => [
+    'host' => 'localhost',
+    'dbname' => 'my_database',
+    'user' => 'root',
+    'password' => '',
+    'port' => '3306'
+  ]
 ];
 
 
@@ -58,16 +58,16 @@ print_r(Config::get('app')); // Returns all the array data placed in the app fil
 
 ```
 Config::setData('my_data', [
-	'app_name' => 'My App',
-	'app_version' => '1.0.0', 
-	'connection_params' => 
-	[
-		'host' => 'localhost',
-		'dbname' => 'my_database',
-		'user' => 'root',
-		'password' => '',
-		'port' => '3306'
-	}
+  'app_name' => 'My App',
+  'app_version' => '1.0.0', 
+  'connection_params' => 
+  [
+    'host' => 'localhost',
+    'dbname' => 'my_database',
+    'user' => 'root',
+    'password' => '',
+    'port' => '3306'
+  }
 ]);
 
 echo Config::get('my_data.app_name'); // 'My App'
