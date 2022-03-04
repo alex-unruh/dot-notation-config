@@ -87,7 +87,7 @@ Define the config dir in a file like a entry point and don't worry about him any
 // public/index.php
 
 $config_path = $_SERVER['DOCUMENT_ROOT'] . $_ENV['BASE_PATH'] . '/config';
-Config::setDir('/config_path);
+Config::setDir($config_path);
 
 // controllers/services/MyService.php
 
