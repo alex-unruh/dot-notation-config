@@ -110,8 +110,8 @@ Config::set($my_array_item, $my_new_value);
 // $the_key_im_looking_for = 'app_version'
 Config::has($my_array_data, $the_key_im_looking_for); // true
 
-// $my_array_item = 'app'
-// $value_to_append = ['app_licence' => 'MIT']
+// $my_array_item = 'app.app_licence'
+// $value_to_append = 'MIT'
 Config::append($my_array_item, $value_to_append);
 
 // $my_array_item = 'app'
