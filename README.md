@@ -40,7 +40,7 @@ return [
 
 // index.php
 
-use AlexUnruh\Config;
+use AlexUnruh\Config\Config;
 
 Config::setDir('/config');
 
@@ -60,7 +60,7 @@ print_r(Config::get('app')); // Returns all the array data placed in the app fil
 
 // index.php
 
-use AlexUnruh\Config;
+use AlexUnruh\Config\Config;
 
 $data = [
   'app_name' => 'My App',
