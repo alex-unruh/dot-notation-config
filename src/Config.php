@@ -1,6 +1,6 @@
 <?php
 
-namespace AlexUnruh\DotNotationConfig;
+namespace AlexUnruh;
 
 use Dflydev\DotAccessData\Data;
 

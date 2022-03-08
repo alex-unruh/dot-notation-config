@@ -10,11 +10,11 @@
 	],
 	"require": {
 		"dflydev/dot-access-data": "^3.0",
-		"php": "^7.2"
+		"php": ">=7.2"
 	},
 	"autoload": {
 		"psr-4": {
-			"AlexUnruh\\DotNotationConfig\\": "src/"
+			"AlexUnruh\\": "src/"
 		}
 	}
 }
